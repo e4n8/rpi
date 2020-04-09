@@ -1,0 +1,11 @@
+---
+- name: Set authorized key for user root copying it from current user
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+  - name: update packages
+    apt: 
+      update_cache: true
+      upgrade: dist
+      cache_valid_time: 3600

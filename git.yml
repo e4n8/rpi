@@ -1,0 +1,22 @@
+---
+- name: Copy from git repo
+  hosts: all
+  connection: local
+  become: yes
+  become_user: root
+  vars:
+    git_dir_pi: /home/pi/rpi.git
+    git_dir_domoticz: /home/pi/domoticz.git
+  tasks:
+  - name: git clone repo rpi
+    git:
+      repo: 'https://github.com/e4n8/rpi.git'
+      dest: '{{ git_dir_pi }}'
+      clone: yes
+      update: yes
+  - name: git clone repo domoticz
+    git:
+      repo: 'https://e4n8:qwezxc.01@github.com/e4n8/domoticz.git'
+      dest: '{{ git_dir_domoticz }}'
+      clone: yes
+      update: yes

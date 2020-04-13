@@ -1,0 +1,3 @@
+[domoservers]
+# 10.13.10.107 ansible_user=pi
+10.13.10.103 ansible_user=pi

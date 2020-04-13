@@ -1,0 +1,6 @@
+---
+# tasks file for domoticz setup
+- include: distro.yml
+- include: update.yml
+- include: install_for_domo.yml
+- include: git.yml

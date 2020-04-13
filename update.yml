@@ -1,5 +1,5 @@
 ---
-- name: Set authorized key for user root copying it from current user
+- name: Update and upgrade
   hosts: all
   become: yes
   become_user: root

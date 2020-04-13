@@ -1,0 +1,22 @@
+---
+- name: Set authorized key for user root copying it from current user
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+  - name: install packages
+    apt:
+      pkg:
+        - mc
+        - mosquitto
+        - mosquitto-clients
+        - python-smbus
+        - i2c-tools
+        - python-dev
+        - monit
+        - samba 
+        - samba-common-bin
+        - arping
+        - ansible
+        - sqlite3
+

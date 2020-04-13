@@ -20,6 +20,7 @@
         - ansible
         - sqlite3
         - sshpass
-        - libudev-dev
-        - libcurl4
-        - libusb-0.1
+        - git
+ #       - libudev-dev  # do domoticza
+ #       - libcurl4     # do domoticza 
+ #       - libusb-0.1   # do domoticza

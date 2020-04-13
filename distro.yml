@@ -1,7 +1,7 @@
 ---
 - name: Raspberry version
   hosts: all
-  connection: local
+#  connection: local
   become: yes
   become_user: root
   tasks:

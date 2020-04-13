@@ -1,0 +1,26 @@
+---
+- name: Copy
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+  - name: Copy monit config
+    copy:
+      src: /home/pi/domoticz.git/monitrc
+      dest: /etc/monit/monitrc
+      force: no
+  - name: Copy rc.local config
+    copy:
+      src: /home/pi/domoticz.git/rc.local
+      dest: /etc/rc.local
+      force: no
+  - name: Copy samba config
+    copy:
+      src: /home/pi/domoticz.git/smb.conf
+      dest: /etc/samba/smb.conf
+      force: no
+  - name: Copy presence.py
+    copy:
+      src: /home/pi/domoticz.git/presence.py
+      dest: /home/pi/presence.py
+      force: no

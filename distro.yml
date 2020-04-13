@@ -7,4 +7,4 @@
   tasks:
   - name: Log on which Linux distro is going to be maintained
     debug:
-      msg: "The distro is: {{ ansible_distribution|lower }} and the version nam$
+      msg: "The distro is: {{ ansible_distribution|lower }} and the version name is: {{ ansible_distribution_release }}"

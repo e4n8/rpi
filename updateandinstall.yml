@@ -24,4 +24,5 @@
         - arping
         - ansible
         - sqlite3
+        - sshpass
 

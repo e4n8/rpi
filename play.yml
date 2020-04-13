@@ -1,6 +1,10 @@
 ---
-# tasks file for domoticz setup
-- include: distro.yml
-- include: update.yml
-- include: install_for_domo.yml
-- include: git.yml
+- import_playbook: distro.yml
+- import_playbook: update.yml
+- import_playbook: install_for_domo.yml
+- import_playbook: timezone.yml
+- import_playbook: git.yml
+
+
+
+

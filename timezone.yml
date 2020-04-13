@@ -1,0 +1,9 @@
+---
+- name: Set time
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+  - name: Set timezone Europe/Warsaw
+    timezone:
+      name: Europe/Warsaw

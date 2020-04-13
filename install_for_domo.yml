@@ -20,4 +20,6 @@
         - ansible
         - sqlite3
         - sshpass
-
+        - libudev-dev
+        - libcurl4
+        - libusb-0.1

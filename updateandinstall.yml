@@ -25,4 +25,5 @@
         - ansible
         - sqlite3
         - sshpass
+        - git
 

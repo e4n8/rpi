@@ -1,3 +1,4 @@
 [domoservers]
 # 10.13.10.107 ansible_user=pi
+# 127.0.0.1 ansible_connection=local
 10.13.10.103 ansible_user=pi

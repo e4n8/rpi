@@ -16,6 +16,7 @@
         - monit
         - samba 
         - samba-common-bin
+        - smbclient
         - arping
         - ansible
         - sqlite3
